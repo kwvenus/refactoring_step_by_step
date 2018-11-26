@@ -10,8 +10,8 @@ public class TestPolice {
     @Test
     public void testPolice_CheckDriverFunction() {
         Police police = new Police();
-        boolean driverShouldValid = police.checkDriver(new Driver(18));
-        boolean driverShouldNotValid = police.checkDriver(new Driver(17));
+        boolean driverShouldValid = police.checkDriverAge(new Driver(18));
+        boolean driverShouldNotValid = police.checkDriverAge(new Driver(17));
         assertTrue(driverShouldValid);
         assertFalse(driverShouldNotValid);
     }
